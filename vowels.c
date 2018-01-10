@@ -10,7 +10,7 @@ printf("/n is an vowel");
 }
 else
 {
-printf("it is odd");
+printf("it is constant");
 }
 return 0;
 }
