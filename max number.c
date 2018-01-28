@@ -1,30 +1,30 @@
 #include<stdio.h>
 int main()
 {
-int i,j,a[50],c,n;
-scanf("%d",&n);
+int i,j,h[50],c,num;
+scanf("%d",&num);
 printf("enter the array values");
-for(i=0;i<=n;i++)
+for(i=0;i<=num;i++)
 {
-scanf("%d",&a[i]);
+scanf("%d",&h[i]);
 }
-for(i=0;i<=n;i++)
+for(i=0;i<=num;i++)
 {
-for(j=i+1;j<=n;j++)
+for(j=i+1;j<=num;j++)
 {
-if(a[i]<a[j])
+if(h[i]<h[j])
 {
-c=a[i];
-a[i]=a[j];
-a[j]=c;
+c=h[i];
+h[i]=h[j];
+h[j]=c;
 }
 }
 }
 printf(" descending order");
-for(i=0;i<n;i++)
+for(i=0;i<num;i++)
 {
-printf("%d\n",a[i]);
+printf("%d\n",h[i]);
 }
-printf("max among number is:%d",a[0]);
+printf("max among number is:%d",h[0]);
 return 0;
 }
