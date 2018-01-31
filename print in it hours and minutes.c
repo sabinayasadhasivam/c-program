@@ -1,12 +1,9 @@
 #include<stdio.h>
 void main()
 {
-int s,b;
-scanf("%d",&s);
- while(s>=60)
-{
-b++;
-s=s-60;
-}
-printf("%d %d",b,s);
+int a,b,c;
+scanf("%d",&a);
+b=a/60;
+ c=a%60
+printf("%d:%d",b,c);
 }
