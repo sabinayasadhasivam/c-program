@@ -1,15 +1,20 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-int n;
+int n=7,f=0,i;
 scanf("%d",&n);
-if(n%2==0)
+for(i=0;i<=n;i++)
 {
-printf("%d is a power of 2",n);
+  if(pow(2,i)==n)
+  {
+  printf("yes");
+    f=1;
 }
-else
+}
+if(f==0)
 {
-printf("%d is not a power of 2",n);
+printf("no");
 }
 return 0;
 }
