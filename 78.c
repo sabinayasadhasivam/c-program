@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-int a;
-scanf("%d",&a);
-if(a%13==0)
+int g;
+scanf("%d",&g);
+if(g%13==0)
 {
 printf("yes");
 }
